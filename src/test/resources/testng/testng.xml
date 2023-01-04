@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite1" verbose="10" parallel ="false" thread-count="5">
+<listeners> 
+<listener class-name="com.ds_Algo.utilities.Reporting"/>
+</listeners>
+<test name="Test1">
+<parameter name="browser" value="chrome"></parameter>
+  <classes>
+    <class name="com.ds_Algo.testCases.TC_getstarted"/>
+    <class name="com.ds_Algo.testCases.TC_register"/>
+    <class name="com.ds_Algo.testCases.TC_signin"/>
+    <class name="com.ds_Algo.testCases.TC_datastructures"/>
+    <class name="com.ds_Algo.testCases.TC_signinDDT"/>
+    <class name="com.ds_Algo.testCases.TC_Queue"/>
+  </classes>
+</test>
+<test name="Test2">
+<parameter name="browser" value="firefox"></parameter>
+  <classes>
+    <class name="com.ds_Algo.testCases.TC_getstarted"/>
+    <class name="com.ds_Algo.testCases.TC_register"/>
+    <class name="com.ds_Algo.testCases.TC_signin"/>
+    <class name="com.ds_Algo.testCases.TC_datastructures"/>
+    <class name="com.ds_Algo.testCases.TC_signinDDT"/>
+    <class name="com.ds_Algo.testCases.TC_Queue"/>
+  </classes>
+  </test>
+</suite>

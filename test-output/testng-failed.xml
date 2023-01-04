@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.ds_Algo.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)" verbose="10">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ds_Algo.testCases.TC_Queue">
+        <methods>
+          <include name="teatdown"/>
+          <include name="queue"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_Queue -->
+      <class name="com.ds_Algo.testCases.TC_getstarted">
+        <methods>
+          <include name="teatdown"/>
+          <include name="getstarted"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_getstarted -->
+      <class name="com.ds_Algo.testCases.TC_datastructures">
+        <methods>
+          <include name="teatdown"/>
+          <include name="datastructures"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_datastructures -->
+      <class name="com.ds_Algo.testCases.TC_signinDDT">
+        <methods>
+          <include name="teatdown"/>
+          <include name="signinDDT"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_signinDDT -->
+      <class name="com.ds_Algo.testCases.TC_signin">
+        <methods>
+          <include name="teatdown"/>
+          <include name="signin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_signin -->
+      <class name="com.ds_Algo.testCases.TC_register">
+        <methods>
+          <include name="teatdown"/>
+          <include name="rigister"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_register -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)" verbose="10">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.ds_Algo.testCases.TC_signinDDT">
+        <methods>
+          <include name="teatdown"/>
+          <include name="signinDDT" invocation-numbers="1 2 3 4"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ds_Algo.testCases.TC_signinDDT -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [TestSuite1] -->
